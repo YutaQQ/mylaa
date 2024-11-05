@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ไปหยุดกัน!!!!!!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>หยุดยังไงให้ไม่ติด มส</h1>
+        <p>ไปเที่ยว!!</p>
+    </header>
+    
+    <!-- Image Section -->
+    <img src="photo/table.png" alt="A table with school supplies and a calendar" class="responsive-image">
+    
+    <!-- Dashboard Section -->
+    <section id="dashboard">
+        <h2>เลือกวัน หรือ วิชาที่ต้องการหยุด</h2>
+        <br>
+        <div id="day-selection">
+            <label for="leave-day">เลือกวัน:</label>
+            <select id="leave-day">
+                <option value="">---</option>
+                <option value="จันทร์">จันทร์</option>
+                <option value="อังคาร">อังคาร</option>
+                <option value="พุธ">พุธ</option>
+                <option value="พฤหัสบดี">พฤหัสบดี</option>
+                <option value="ศุกร์">ศุกร์</option>
+            </select>
+            <button id="add-leave-day">ตกลง(แบบรายวันเท่านั้น)</button>
+        </div>
+        
+        <!-- Course Selection -->
+        <div id="course-selection">
+            <label for="course">เลือกวิชา:</label>
+            <select id="course">
+                <option value="">---</option>
+                <option value="เคมี">เคมี</option>
+                <option value="ดาราศาสตร์">ดาราศาสตร์</option>
+                <option value="ชีวะ">ชีวะ</option>
+                <option value="ฟิสิกส์">ฟิสิกส์</option>
+                <option value="คณิตศาสตร์">คณิตศาสตร์</option>
+                <option value="english_Lolie">English for Development (ครูโจ)</option>
+                <option value="ภาษาไทย">ภาษาไทย</option>
+                <option value="คอมพิวเตอร์">คอมพิวเตอร์</option>
+                <option value="สุขศึกษา">สุขศึกษา</option>
+                <option value="ศิลปะ">ศิลปะ</option>
+                <option value="english_Waranya">English (ครูวรัญญา)</option>
+                <option value="english_Teacher">English (Teacher)</option>
+                <option value="ห้องสมุด">ห้องสมุด</option>
+                <option value="เกษตร">เกษตร</option>
+                <option value="สังคม">สังคม</option>
+                <option value="แนะแแนว">แนะแแนว</option>
+            </select>
+            <button id="add-leave-course">ตกลง(แบบรายวิชาเท่านั้น)</button>
+        </div>
+
+        <!-- Reset Button -->
+        <button id="reset-leave">รีเซ็ทจำนวนลา</button>
+
+        <!-- Leave Tracker -->
+        <div id="leave-tracker">
+            <h3>การลาใหม่</h3>
+            <ul id="leave-list">
+                <!-- Leave items will be added here -->
+            </ul>
+        </div>
+        
+        <!-- Summary Section -->
+        <div id="leave-summary">
+            <h3>จำนวนคงเหลือการลา</h3>
+            <ul id="summary-list">
+                <!-- Summary items will be dynamically added here -->
+            </ul>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

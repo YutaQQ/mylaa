@@ -1,0 +1,100 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f4f6;
+    color: #333;
+    height: auto; /* Allow for dynamic height */
+    overflow-y: auto; /* Allow scrolling */
+}
+
+header {
+    margin-top: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #4a90e2;
+}
+
+.responsive-image {
+    width: 100%; /* Make image responsive */
+    max-width: 600px; /* Set maximum width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0; /* Add space around the image */
+}
+
+#dashboard {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#day-selection,
+#course-selection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%; /* Adjust width to ensure better alignment */
+    max-width: 150px; /* Limit the max width for better appearance */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 10px; /* Space between the dropdown and button */
+}
+
+button:hover {
+    background-color: #357ab8;
+    transform: scale(1.05);
+}
+
+#leave-tracker,
+#leave-summary {
+    margin-top: 20px;
+}
+
+#leave-list,
+#summary-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
